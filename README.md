@@ -1,20 +1,21 @@
 # Server Status Checker
 
-Spring Boot приложение для проверки статуса серверов и управления группами серверов.
+Spring Boot сервис для проверки статуса сайтов (JSON) и управления группами серверов. Есть кеширование HTML-страниц для ускорения работы.
 
-- Проверка статуса любого URL через REST API
-- CRUD для серверов и групп (PostgreSQL, JPA, @OneToMany)
+**Запуск:**
+1. Настройте БД в `application.properties`
+2. Запустите:
+   ```sh
+   mvn clean spring-boot:run
+   ```
 
-## Запуск
+**Примеры:**
+- `/checks/status/google`
+- `/checks/status/wikipedia`
+- `/checks/status/microsoft`
+- `/checks/status/spotify`
 
-1. Укажите параметры БД в `src/main/resources/application.properties`
-2. Соберите и запустите:
-3. Примеры запросов:
-- Проверка: `GET /checks/status?url=https://google.com`
-- CRUD группы: `GET /groups`
+## Скриншоты
 
----
-
-_Лабораторная работа №2_
-
-![alt text](<Screenshot 2025-06-01 112704.png>)
+![Главная страница](screenshots/home.png)
+![Пример ответа](screenshots/google.png)

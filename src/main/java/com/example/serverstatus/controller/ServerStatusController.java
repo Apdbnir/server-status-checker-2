@@ -4,6 +4,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/")
-public class ServerGroupController {
+public class ServerStatusController {
 
+    @GetMapping
+    public String checkStatus() {
+        return "Server is running";
+    }
 }
