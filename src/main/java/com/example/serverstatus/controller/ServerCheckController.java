@@ -3,7 +3,6 @@ package com.example.serverstatus.controller;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.serverstatus.model.ServerCheck;
-import com.example.serverstatus.model.ServerGroup;
 import com.example.serverstatus.servise.ServerCheckService;
 import com.example.serverstatus.repository.ServerCheckRepository;
 
