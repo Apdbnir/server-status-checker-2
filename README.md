@@ -8,6 +8,7 @@ Spring Boot сервис для проверки статуса сайтов (JS
    ```sh
    mvn clean spring-boot:run
    ```
+Лабораторная работа №3
 
 **Примеры:**
 - `/checks/status/google`
